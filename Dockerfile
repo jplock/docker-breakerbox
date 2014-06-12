@@ -12,5 +12,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 EXPOSE 8080 8081
 
-ENTRYPOINT ["java", "-Darchaius.configurationSource.additionalUrls=file:config.properties", "-jar", "/opt/breakerbox-0.1.0/breakerbox-service-0.1.0.jar"]
+WORKDIR /opt/breakerbox-0.1.0
+
+ENTRYPOINT ["java", "-Darchaius.configurationSource.additionalUrls=file:config.properties", "-jar", "breakerbox-service-0.1.0.jar"]
 CMD ["server", "breakerbox.yml"]
