@@ -3,4 +3,4 @@ docker-breakerbox
 
 Builds a docker image for Breakerbox.
 
-```docker build -t <user>/breakerbox:0.2.6 .```
+```docker build -t <user>/breakerbox:0.3.3 .```
