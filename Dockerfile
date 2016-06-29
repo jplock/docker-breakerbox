@@ -1,7 +1,7 @@
 FROM java:openjdk-8-jre-alpine
 MAINTAINER Justin Plock <justin@plock.net>
 
-ARG VERSION=0.4.3
+ARG VERSION=0.4.4
 
 LABEL name="breakerbox" version=$VERSION
 
@@ -14,5 +14,5 @@ WORKDIR /opt
 
 VOLUME ["/opt"]
 
-ENTRYPOINT ["java", "-jar", "breakerbox-service-0.4.3.jar"]
+ENTRYPOINT ["java", "-jar", "breakerbox-service-0.4.4.jar"]
 CMD ["server", "breakerbox.yml"]
